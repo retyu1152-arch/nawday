@@ -18,6 +18,13 @@ def startup_event() -> None:
     Base.metadata.create_all(bind=engine)
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    """Root endpoint used by platform health checks."""
+
+    return {"message": "AI Document Generator API"}
+
+
 @app.get("/health")
 def healthcheck() -> dict[str, str]:
     """Readiness endpoint."""
