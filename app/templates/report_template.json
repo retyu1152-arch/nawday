@@ -1,0 +1,4 @@
+{
+  "name": "Report",
+  "sections": ["Executive Summary", "Background", "Analysis", "Findings", "Recommendations", "Conclusion"]
+}
